@@ -21,8 +21,13 @@ form {
     margin: 10px;
 }
 
+#headline-display{
+    border: 3px solid;
+    flex-direction: column;
+    margin: 10px;
+}
+
 #display{
-    border-style: solid;
     flex-direction: column;
     margin: 10px;
 }
