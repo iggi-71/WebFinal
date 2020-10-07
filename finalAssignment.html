@@ -1,44 +1,51 @@
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ignacio - Final - Web 1.0</title>
 </head>
 <body>
-    <section id="student-info"> 
-        <h1>Ignacio Jimenez</h1>
-        <p> My favorite color is blue and I wear any shoes</p>
-    </section>
-    <section id="data-input">
-        <h1>Font Styler</h1>
-        <form>
-            Font Size: <input id="input-size" type="number">
-            Font Family: <input id="select-font" type="option">
-                <option value="Helvetic"></option>
-                <option value="Arial"></option>
-                <option value="Times New Roman"></option>
-                <option value="Georgia"></option>
-            Font Color: <input id="input-color" type="color" value="#000">
-            Background Color: <input id="input-bg-color" type="color" value="#fff">
-            <input type="Background Color" id="input-bg-color" type="color" value="#fff">
-            Enter Text: <input id="enter-text" type="Input text">
-        </form>
-    </section>
+    <main>
+        <div class="part1">
+            <section id="student-info"> 
+                <h1>Ignacio Jimenez</h1>
+                <p> My favorite color is blue and I wear any shoes</p>
+            </section>
 
-    <section id="headline-display">
-        <h1 id="display"></h1>
-    </section>
+            <section id="data-input">
+                <h1>Font Styler</h1>
+                <form>
+                    Font Size: <input id="input-size" type="number">
+                    Font Family: <select id="select-font">
+                        <option value="Helvetic">Helvetic</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                    </select>
+                    Font Color: <input id="input-color" type="color" value="#000">
+                    Background Color: <input id="input-bg-color" type="color" value="#fff">
+                    <input type="Background Color" id="input-bg-color" type="color" value="#fff">
+                    Enter Text: <input id="enter-text" type="Input text">
+                </form>
+            </section>
+        </div>
 
-    <section id="data-output">
-        <pre><code>.headline {
-            font-size: <span id="show-size">16</span>px;
-            font-family: <span id="show-font">Times</span>;
-            color: <span id="show-color">#000</span>;
-            background-color: <span id="show-bg-color">#fff</span>;
-        }</code></pre>
-    </section>
-
-
-    
+        <div class="part2">
+            <section id="headline-display">
+                    <h1 id="display">Sample text</h1>
+            </section>
+                
+            <section id="data-output">
+                <pre><code>.headline {
+                    font-size: <span id="show-size">16</span>px;
+                    font-family: <span id="show-font">Times</span>;
+                    color: <span id="show-color">#000</span>;
+                    background-color: <span id="show-bg-color">#fff</span>;
+                }</code></pre>
+            </section>
+        </div>
+    </main>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+#data-input{
+    border-style: solid;
+}
+
+#data-output{
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#display{
+    border-style: solid;
+    flex-direction: column;
+    margin: 10px;
+}
